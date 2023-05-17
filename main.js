@@ -58,14 +58,25 @@ arrowUp.addEventListener('click',()=>{
 const workBtnContainer=document.querySelector('.work__categories')
 const projectContainer=document.querySelector('.work__projects')
 const projects=document.querySelectorAll('.project')
-console.log(projects,'projects')
+
 workBtnContainer.addEventListener('click',(e)=>{
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if(filter === null){
     return;
   }
- 
+//  remove selection from the prvious item 
+const active=document.querySelector('.category__btn.selected')
+console.log(active,'active')
+
+  active.classList.remove('selected')
+  const target = e.target.nodeName === 'BUTTON'?e.target :e.target.parentNode
+  target.classList.add('selected')
+
+
+
   
+  console.log(e.target.classList,'class')
+
   projectContainer.classList.add('anim-out')
   setTimeout(()=>{
     projects.forEach((project)=>{

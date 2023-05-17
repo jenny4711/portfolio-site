@@ -182,14 +182,18 @@ text-align: left;
   padding:8px 12px;
   cursor: pointer;
   border-radius:4px;
+  color:white;
+  border:1px solid transparent;
 }
 
-.navbar__menu__item.active{
+/* .navbar__menu__item.active{
   border:1px solid white;
 
-}
+} */
+
 .navbar__menu__item:hover{
   background-color: #2F4858;
+  border-color:white;
 }
 .navbar__toggle-btn{
   position:absolute;
@@ -295,7 +299,7 @@ text-align: left;
   padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color:#faa307;
   color: white;
