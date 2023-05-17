@@ -379,6 +379,7 @@ text-align: left;
   opacity: 0;
   transform: translateY(10px);
   transition:all 300ms ease;
+  color:white;
 }
 
 .project:hover .project__description {
