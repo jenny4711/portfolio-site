@@ -1,9 +1,10 @@
 'use stric'
 // Make navbar transparent when it is on the top
 const navbar=document.querySelector('#navbar')
+const navbarMenu = document.querySelector('.navbar__menu');
 const navbarHeight=navbar.getBoundingClientRect().height
 document.addEventListener('scroll',()=>{
-
+  navbarMenu.classList.remove('open');
   if(window.scrollY > navbarHeight){
     navbar.classList.add('navbar--dark')
   }else{
@@ -11,8 +12,14 @@ document.addEventListener('scroll',()=>{
   }
 })
 
+// navbar toggle btn for small screen
+const navbarToggleBtn=document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+  navbarMenu.classList.toggle('open');
+})
+
 // Handle scrolling when topping on the navbar menu
-const navbarMenu = document.querySelector('.navbar__menu');
+
 navbarMenu.addEventListener('click',(e)=>{
  
   const target = e.target;
@@ -20,9 +27,11 @@ navbarMenu.addEventListener('click',(e)=>{
   if(link === null){
     return;
   }
-  console.log(e.target.dataset.link)
+
   scrollIntoView(link)
 })
+
+
 
 // handle click on ' contact me' btn on home
 const homeContactBtn=document.querySelector('.home__contact');
