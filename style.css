@@ -74,7 +74,7 @@ h2{
 h3{
   font-size:18px;
   font-weight:400;
-  color:black ;
+  color:#005248;;
   margin:8px 0;
 }
 p{
@@ -95,22 +95,39 @@ margin:auto;
   margin:auto;
 }
 /* about */
+.about{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.about .about-text{
+  width:50%;
+  height:100%;
+}
 .about__majors{
   display:flex;
   justify-content: space-between;
-  margin:80px 0;
+  align-items: center;
+  margin:60px 0;
+  background-color: #005248;
+  padding:40px;
+  box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+-webkit-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+-moz-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
 }
 
 .major__icon{
   display:flex;
   justify-content: center;
   align-items: center;
-  width:170px;
-  height:170px;
+  width:150px;
+  height: 150px;
   font-size:70px;
-  border:1px solid #2F4858;;
+  border:1px solid white;
   margin:auto;
-  color:#2F4858;;
+  color:white;;
   border-radius: 50%;
   margin-bottom:16px;
   
@@ -139,6 +156,9 @@ margin:auto;
 display:flex;
 align-items: center;
 
+margin-top: 50px;
+margin-bottom: 50px;
+
 }
 .school__description{
 
@@ -154,6 +174,52 @@ text-align: left;
 .school_period{
   font-size:14px;
 }
+/* skills */
+#skills{
+  background-color:#FFECCC ;
+ }
+
+ .skillset__title{
+  color:black;
+  font-weight: bold;
+ }
+
+ .skillset{
+  display:flex;
+  flex-direction: column;
+
+  padding:20px;
+  color:#eeeeee;
+  margin:15px 0;
+
+ }
+ .tools__list{
+  display:flex;
+  /* flex-direction: row; */
+  flex-wrap:wrap;
+  justify-content: center;
+ 
+ }
+
+ .tools__img{
+  text-align: center;
+  width:130px;
+  height: 130px;
+  padding:30px;
+  border-radius: 10px;
+  margin-right:40px;
+  margin-bottom: 20px;
+  background-color: white;
+  transition:all 300ms ease in;
+ }
+
+ .tools__img:hover{
+  transform:rotate(-30deg) scale(1.1);
+  background-color: #faa307;
+ }
+
+
+
 
 #navbar{
   display:flex;
@@ -188,10 +254,6 @@ text-align: left;
   border:1px solid transparent;
 }
 
-/* .navbar__menu__item.active{
-  border:1px solid white;
-
-} */
 
 .navbar__menu__item:hover{
   background-color: #2F4858;
@@ -220,6 +282,9 @@ text-align: left;
   padding-top:120px;
   text-align: center;
 }
+
+
+
 .home__avatar{
   width:250px;
   height:250px;
@@ -244,55 +309,71 @@ text-align: left;
 }
 
  /* skill */
- #skills{
-  background-color:#FFECCC ;
- }
+ 
 
- .skillset__title{
-  color:white;
- }
-
- .skillset{
-  display:flex;
-  background-color:#7c7979 ;
-  color:#eeeeee;
-  margin:20px 0;
-
- }
- .skillset__left{
-  flex-basis: 60%;
-  background-color:#4d4d4d ;
-  padding:20px 40px;
- }
- .skill{
-  margin-bottom:32px ;
- }
-
- .skill__description{
-  display:flex;
-  justify-content: space-between;
- }
- .skill__bar{
-  width:100%;
-  height:4px;
-  background-color:#616161 ;
-
- }
-
- .skill__value{
-  width:100%;
-  height:4px;
-  background-color: #feb546;
- }
  .skillset__right{
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
+  
+  
  }
  .tools{
-  background-color:#616161 ;
+
+  background-color:#005248 ;
+  padding:150px;
+  margin:50px;
+  color:#FFECCC ;
+  box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+  -webkit-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+  -moz-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+
  }
+ .tools__list li{
+ margin-left:50px;
+ margin-bottom:30px;
+ }
+
  .tools,.etc{
   padding:20px;
  }
+ .etc{
+  display:flex;
+  background-color: #005248;
+  justify-content: center;
+ 
+  margin:60px 0px;
+  box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+  -webkit-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+  -moz-box-shadow: -20px -2px 43px -6px rgba(52,69,42,0.75);
+ }
+ .etc__list{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  
+ }
+ .etc__list li{
+  margin-right:30px;
+ }
+
+ .etc__img{
+  text-align: center;
+  width:100px;
+  height: 50px;
+ 
+  border-radius: 10px;
+ 
+  background-color: white;
+ }
+ .etc__img:hover{
+  transform:rotate(-30deg) scale(1.1);
+
+ }
+
+
+
+
  /* work */
  .work__categories {
   margin: 40px;
@@ -300,8 +381,8 @@ text-align: left;
 
 .category__btn {
   border: 1px solid var(--color-dark-white);
-  border-radius: var(--size-border-radius);
-  font-size: var(--font-regular);
+  border-radius:4px;
+  font-size: 18px;
   padding: 8px 48px;
   position:relative;
 }
@@ -490,6 +571,7 @@ transform:translateX(-50%);
 
   .about__majors {
     flex-direction: column;
+ 
     margin-top:30px;
     margin-bottom:0px;
   }
