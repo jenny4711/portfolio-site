@@ -31,10 +31,10 @@ navbarMenu.addEventListener("click", (e) => {
 });
 
 // handle click on ' contact me' btn on home
-const homeContactBtn = document.querySelector(".home__contact");
-homeContactBtn.addEventListener("click", () => {
-  scrollIntoView("#contact");
-});
+// const homeContactBtn = document.querySelector(".home__contact");
+// homeContactBtn.addEventListener("click", () => {
+//   scrollIntoView("#contact");
+// });
 
 // Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector(".home__container");
