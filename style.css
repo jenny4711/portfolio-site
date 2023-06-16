@@ -220,7 +220,10 @@ a{
   padding-top:15%;
   
 }
-
+.jobly_right .tech,.netflix_right .tech,.manna_right .tech{
+font-size:12px;
+  
+}
 
 
 /* --------footer------------ */
