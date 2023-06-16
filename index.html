@@ -1,254 +1,133 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link ref="icon" type="image/png" href="img/logo_rm.png">
-  <script src="https://kit.fontawesome.com/08b42b2b6b.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"/>
-  <title>Jenny's Portfolio</title>
-  <script src="main.js" defer></script>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7XC20YF287"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/08b42b2b6b.js" crossorigin="anonymous"></script>
+  
+   
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css"/>
+      <title>Jenny's Portfolio</title>
+      <script src="main.js" defer></script>
 
-  gtag('config', 'G-7XC20YF287');
-</script>
-</head>
-<body>
-
-  <nav>
-    <!-- navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">Jenny</a>
-      </div>
-     
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active" data-link="#home">Home</li>
-          <li class="navbar__menu__item" data-link="#about">About</li>
-          <li class="navbar__menu__item" data-link="#skills">Skills</li>
-          <li class="navbar__menu__item" data-link="#work">My work</li>
-          <a href="https://jenny4711.github.io/resume/" class="navbar__menu__item" target="_blank">Résumé</a>
-          <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
-     
-<!-- toggle btn -->
-<button class="navbar__toggle-btn">
-  <i class="fa-solid fa-bars"></i>
-</button>
+    </head>
+  <body>
+    <nav>
+     <div class="navb_name">
+      <span>Jenny Lee</span>
+     </div>
+     <div class="navb_right">
+      <span> <a href="https://jenny4711.github.io/resume/" class="a" target="_blank">Résumé</a></span>
+      
+      <span> <a href="mailto:jjenny4711@gmail.com" class="a">Contact</a> </span>
+      <span class="circlebtn">
+        <i class="fa-solid fa-circle-half-stroke"> </i>
+      </span>
+     </div>
     </nav>
+<section class="home">
+  <img src="img/myImg.png" alt="Jenny's profile photo" class="home__avatar"/>
+  <h2>Jenny Lee</h2>
+  <p class="home__description">A Software Engineer Currently residing in New York USA</p>
 
-    <section id="home">
-      <div class="home__container">
-      <img src="img/myImg.png" alt="Jenny's profile photo" class="home__avatar"/>
-      <h1 class="home__title">Hello,<br/>I'm Dream Coder</h1>
-      <h2 class="home__description">A Software Engineer Currently residing in New York USA</h2>
-      <!-- <button class="home__contact">Contact me</button> -->
-      <a href="mailto:jjenny4711@gmail.com" class="btn btn--contact home__contact ">Contact me</a> 
+  <ul>
+    <li><img class="skill_icon" src="https://s3-alpha-sig.figma.com/img/5bf6/bf84/84e9c2f83f6bdfa4c1d5d8fddc20835f?Expires=1687737600&Signature=n2eTwXBcg5nseGOjUzp7n4GusabY4PbODPb5C9JrTLtdfjfpI1iH7XVyQ~9HdcmGmy2pTA~4TNJ7FTatU71Wh99-UiA8ZQi-s7N0IuiutFDw-nq~F45uyo4pYIJwq3obRyyMQpGeoXGZ7~q1fLmmRLu44Bs91xBqKu3Yxxp298qeGViKZIpf2S5Xext4Ofx653COmZjB7Qv01ZNs1t1AFINQOB3yX1m6VNpQbo~wWZpeLe2TFWzbmDqRr8XZ8WnGJhC6cVdbDZHuD7Eyy-Rplg8ho7LyX~KkWJrufGBNaS8R2g~0F3iG4ImR9Jk1Eocy6yrZXC5JXByzaUYkS4mI-w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/>  HTML</li>
+    <li><img class="skill_icon" src="https://s3-alpha-sig.figma.com/img/d884/1052/a121cf92f235147bff8426d76466b2bc?Expires=1687737600&Signature=X1pKozRpIQLH5G5xb3YBSOgC2Z23jPsvYexa95IucVKDU7OrYYtUfIxF4k2~bZfG4ceiF4GE3D9fL7Ea~go4fiQt-W2wQWCYa1Ih65hueScq8DCbnOmt2OMaHlQUhvZmITR7EhCfw12XN1YLZ-gpMnsZXuqR5owFbMRlACMe-x48CMGqCvjJRhTQOZzVelAPvVV9sV4scYQsY0KicJmm0IONIBYsXwgN1Z14KF~t3Z2t7bQeE-U3wDtjOtTSI8~vMK-gk9x03XM5P4v-V5nTDOl19Ny74vVFQ8CPcwwIwcomWtEbNvH4yhSKjJeKA-o7HTdJJvOBuRIQRLKus~9GkQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/>    JavaScript</li>
+    <li><img class="skill_icon" src="https://s3-alpha-sig.figma.com/img/4a73/618b/5c1d0afa89f1c1e0854697f83d68ea40?Expires=1687737600&Signature=GKK1tGvulC9I2LPaalm2Uu1KBj1uzbtlq~i1voOUGLMDWdZzR2TyV05igLaeiW~oCiHrNlc9SKgvBD8gywSRhoYzYgae9Gr-aBQ6rvIX~LAoQxC~n82FHUW9rG9lvk7i4fie9MfFtdiylncrMBHTEW3cxDZqy5uDcNd-d9KwHZkeQwWD~Gj0vuSsslKURrlRWfhG2n~x~IhevjZpijT4-c2QJmB9M7jiPi~J0MyP8WO~RjpRiux-vKMBQ4H5QDPwI5qOfH~8Uh6QfRn4jUKwSuzL3~wOOuEYgXfnNK7jXbZOzKzSB~JVIMsZhGHQuK5FQbNvGaBiWIyz8tmRKEQbmg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/>   React</li>
+    <li><img class="skill_icon" src="https://s3-alpha-sig.figma.com/img/520d/14e5/a04f82cd809e30e2b95899919d7f80dd?Expires=1687737600&Signature=cKegXNFqha-32nSpZkZvuExMtcj8-tPSL1wkiseyMS6t1J3BuEVRIEvu8tk6O-qDJHbytLLK8azU60u8l8ws-N0x9YXcG-XxAri8PwURUdwjrh8RtIkPkB-g392Rh5lKzvPvT3~DLolCcm7YLArBOGTO4FiKf655UGajJhgXLAAC7mdRP3Afhryudyw7ADcy69XATmC8rvCCs3iY8b~m2GH8IXjv5Qj1fg3t4amj7SHgGi4sAwDmn4XLJ8HO6~lGBO9VFpcf63X6a8bnkv-AbeN-Zc6IaVnw5pyvBCq5ptatp1HGs7e6ITzAhL~23zm0Sch42CEu0hzvrq~dn0VEMA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/> Node.js</li>
+  </ul>
+</section>
 
-
+<section class="project">
+  <div class="project_manna">
+    <div class="manna_left">
+      <div class="project_img"><img class="manna_icon" src="img/manna.png"/></div>
+      <span id="line"></span>
     </div>
 
-    </section>
-    <!-- about -->
- <section class="about">
-      
-<h1>About me</h1>
-<p class="about-text">My name is Jiyoun Lee. Based on my varied work experience, I am pursuing a career pivot to software engineering. Currently, I am building my skills at Springboard Boot Camp. I take on tasks with the mindset that challenges and obstacles are opportunities for learning and improving. I would like to work at a place where I can continuously grow within my area of expertise. In the interim, I am learning from others in the field through networking and educational opportunities.</p>
-<br/>
+    <div class="manna_right">
+      <h5>Manna</h5>
+      <span>Manna.co - Software Engineer Contract</span>
+      <span class="period">November 2022 - Current</span>
+      <br/>
+      <span class="project_discription" >A campaign generator that creates engaging phrases for effective marketing.</span>
+      <div class="a_tag">
+      <a href="https://github.com/jenny4711/manna" >Github</a>
+      <a href=" https://remarkable-shortbread-919059.netlify.app">Live website</a>
+   
+    </div>
+    <img  class="manna_img"src="img/Screenshot 2023-06-03 at 2.57.05 PM.png"/>
+    </div>
 
-  <div class="school">
-    <img src="https://www.springboard.com/profile-assets/images/newspringboardlogo.png" class="school__logo"/>
-    <div class="school__description">
-    <p class="school_name">SpringBoard-Software Engineering Career Track</p>
-    <p class="school_period">Aug/2022-July/2023</p>
   </div>
+<!-- ---------------------------------------------------------------------------------- -->
+  <div class="project_netflix">
+    <div class="netflix_left">
+      <div id="nfIcon" class="iconWh" ><img class="netflix_icon" src="https://s3-alpha-sig.figma.com/img/93fc/1f9d/bbbfa32ae9a83ca3fb0708bdb598abe3?Expires=1687737600&Signature=aovghh43On2nXWi9Bc1YpWreN71cxwO0blELqfxrRYVcx0HjEKbRUUnJeuAJYQMKt86-APPu0KPBUEiB9uz-Wwlk9uq4U7I47N2YBd7hUgPH3Ah4ZH7Hzy~artLYY-XrUuNu9B8EuV1qDNY~TpMtE2KWVlQeFlsSjA1wObZDlf9AbU6M~Ee7qyzW0ft-FZYJhyHbAmw1xdUf~mNWSrClK3GCRT4xxg15RAvJqeyio0a4IZCFVohNFRf-mRkFt8S997V5VwunOWx1VU5tV1WDZ~V-o8GjnXnRJ-z~8eCahj~w1yo-9z8LsTRho9TumtzqCtJwPS1kyFUbZU3RekGElw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"/></div>
+      <span id="line" ></span>
+    </div>
+
+    <div class="netflix_right">
+      <h5>Netflix</h5>
+      <span>Personal project</span>
+      <span class="period">April 2023 </span>
+      <br/>
+      <span class="project_discription">Base on Netflix, you can separate and view information on the latest movies 
+        and popular movies. It allows filtering and sorting options.</span>
+      <div class="a_tag">
+      <a href="https://github.com/jenny4711/CN-netflix" >Github</a>
+      <a href=" https://jovial-pudding-d60ab1.netlify.app">Live website</a>
+   
+    </div>
+    <img  class="netflix_img "src="img/netflix.png"/>
+    </div>
+
   </div>
+
+  <!-- ------------------------------------------------------------------------------------ -->
+  <div class="project_jobly">
+    <div class="jobly_left">
+      <div id="jbIcon" class="iconJwh" ><i class="fa-sharp fa-solid fa-j"></i></div>
+      <span id="line" ></span>
+    </div>
+
+    <div class="jobly_right">
+      <h5>Jobly</h5>
+      <span>Spring Board project</span>
+      <span class="period">March 2023 </span>
+      <br/>
+      <span class="project_discription">Base on Netflix, you can separate and view information on the latest movies 
+        and popular movies. It allows filtering and sorting options.</span>
+      <div class="a_tag">
+      <a href="https://github.com/jenny4711/frontend_joblyr" >Github</a>
+      <a href="https://joblyreact.netlify.app">Live website</a>
+   
+    </div>
+    <img  class="jobly_img "src="img/jobly.png"/>
+    </div>
+
+  </div>
+
+
+  
 
 </section>
-    <!-- skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          I have experience with all phases of the software life-cycle.
-           I am passionate about learning new technologies and am capable of working 
-           within a team environment as well as independently. I have also acquired the ability 
-           to plan and coordinate schedules, work under strict time constraints and adapt quickly 
-           when needed.
-        </p>
-        
-        <div class="skillset">
-          <h3 class="skillset__title">SKILLS</h3>
-          <div class="about__majors">
-           
-            <div class="major">
-              <div class="major__icon">
-                <a href="https://html.com/" target="blank"><i class="fa-brands fa-html5"></i></a>
-              </div>
-          
-              <div class="major__description"></div>
-            </div>
-          
-           
-            <div class="major">
-              <div class="major__icon">
-                <a href="https://www.javascript.com/" target="blank"><i class="fa-brands fa-js"></i></a>
-              </div>
-            
-              <div class="major__description"></div>
-            </div>
-          
-            
-                <div class="major">
-                  <div class="major__icon">
-                    <a href="https://react.dev/" target="blank"><i class="fa-brands fa-react"></i></a>
-                  </div>
-                 
-                  <div class="major__description"></div>
-                </div>
-          
-               
-                  <div class="major">
-                    <div class="major__icon">
-                      <a href="https://nodejs.org/en" target="blank"><i class="fa-brands fa-node"></i></a>
-                    </div>
-                  
-                     <div class="major__description"></div>
-                   </div>
-                   
-                      <div class="major">
-                        <div class="major__icon">
-                          <a href="https://nodejs.org/en" target="blank"><i class="fa-brands fa-python"></i></a>
-                        </div>
-                       
-                  </div>
-          
-                  
-          </div>
-          
 
-          <div class="skillset__right">
-            <h3 class="skillset__title">TOOLS</h3>
-            <div class="tools">
-            
-              <ul class="tools__list">
-                <li><a href="https://code.visualstudio.com/" target="blank"><img class="tools__img" src="img/vscodes.png" alt="vscode"/></a></li>
-                <li><a href="https://react-bootstrap.github.io/" target="blank"><img class="tools__img" src="img/bs.png" alt="bootstrap react"/></a></li>
-                <li><a href="https://fontawesome.com/docs/web/use-with/react/" target="blank"><img class="tools__img" src="img/fawsome.png" alt="fontawsome"/></a></li>
-                <li><a href="https://render.com/" target="blank"><img class="tools__img" src="img/renderE.png" alt="render.com"/></a></li>
-                <li><a href="https://www.netlify.com/" target="blank"><img class="tools__img" src="img/netlifyCc.png" alt="netlify.com"/></a></li>
-                <li><a href="https://www.postgresql.org/" target="blank"><img class="tools__img" src="img/postgreSql.png" alt="postgreSql"/></a></li>
-              
-              </ul>
-            </div>
-            <h3 class="skillset__title">ADDITIONAL TOOLS</h3>
-            <div class="etc">
-           
-              <ul class="etc__list">
-                <li><a href="https://github.com/" target="blank"><img class="etc__img" src="img/github.png" alt="vscode"/></a></li>
-                <li><a href="https://www.figma.com/" target="blank"><img class="etc__img" src="img/figma.png" alt="vscode"/></a></li>
-                <li><a href="https://www.adobe.com/creativecloud/business/teams.html?sdid=B16P3W9X&mv=search&ef_id=Cj0KCQjwmZejBhC_ARIsAGhCqnd1cBgd91R0s2kgQTRSLzUgL3MHHbm-X9KWYM7Gf9Cf7rKSgs8-PRwaAg2GEALw_wcB:G:s&s_kwcid=AL!3085!3!566814725481!e!!g!!adobe%20photoshop!15482932269!136265040448&gad=1" target="blank"><img class="etc__img" src="img/ps.webp" alt="vscode"/></a></li>
-              </ul>
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- work -->
-    <section id="work" class="section">
-      <div class="section__container">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn selected " data-filter="*">All</button>
-        <button class="category__btn" data-filter="front-end">Frontend</button>
-        <button class="category__btn" data-filter="back-end">Full Stack</button>
-      </div>
-
-      <div class="work__projects">
-        <a href="https://github.com/jenny4711/CN-netflix" target="blank" class="project" data-type="front-end">
-          <img class="project__img"  src="img/projects/netflixwithmc.png" alt="netflix">
-         
-          <div class="project__description">
-            <h3>Netflix</h3>
-            <h5>Display popular ,top rate,upcoming movies's info </h5>
-            <h5>Tech-React,CSS</h5>
-           <span>Click Me!</span>
-          </div>
-        </a>
-       
-      
-
-    
-        <a href="https://github.com/jenny4711/frontend_joblyr" target="blank" class="project" data-type="front-end">
-          <img class="project__img"  src="img/projects/joblywithmc.png" alt="netflix">
-          <div class="project__description">
-            <h3>Jobly</h3>
-            <h5>Find Job and Post Job</h5>
-            <h5>Tech-React,CSS</h5>
-            <span>Click Me!</span>
-          </div>
-        </a>
-       
-        <a href="https://github.com/jenny4711/CN-react-my-web" target="blank" class="project" data-type="front-end">
-          <img class="project__img" src="img/projects/prasiewithmc.png" alt="netflix">
-          <div class="project__description">
-            <h3>Praise Typing Game</h3>
-            <h5>Typing Game with bible and praise </h5>
-            <h5>Tech-React,CSS</h5>
-            <span>Click Me!</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/jenny4711/capstone_project_1" target="blank" class="project" data-type="back-end">
-          <img class="project__img" src="img/projects/whattowear.png" alt="whattowear">
-          <div class="project__description">
-            <h3>What To Wear</h3>
-            <h5 class="project-h5"> The app is showing what to wear randomly in 'my closet' 
-              and 'shopping closet' depending on the weather. </h5>
-              <h5>Tech-Flask,CSS</h5>
-              
-            <span>Click Me!</span>
-          </div>
-        </a>
-      </div>
-    </div>
-    </section>
-    
-    <!-- contact -->
-    <section id="contact">
-      <h1 class="contact__title">Let's talk</h1>
-    
-      <a href="mailto:jjenny4711@gmail.com" class="btn btn--contact home__contact ">Contact me</a> 
-      <div class="contact__links">
-        <a href="https://www.linkedin.com/in/jenny-lee-a61095106/" target="blank">
+    <div class="footer">
+      <p>@2023 Jenny Lee</p>
+      <div class="footer-link">
+        <a  class='linkedin' href="https://www.linkedin.com/in/jenny-lee-a61095106/" target="blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/jenny4711">
+        <a class="github" href="https://github.com/jenny4711">
           <i class="fa-brands fa-github"></i>
         </a>
-       
-       
       </div>
-      <p class="contact__rights">
-        2023 Happy Coding Jenny - All rights reserved
-      </p>
 
-    </section>
-  <!-- Arrow up -->
-  <button class="arrow-up">
-    <i class="fas fa-arrow-up"></i>
-  </button>
- 
-</body>
+    </div>
+    <script src="https://kit.fontawesome.com/08b42b2b6b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
