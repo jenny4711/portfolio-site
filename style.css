@@ -252,4 +252,45 @@ i {
   text-decoration: none;
   color: black;
 }
+@media screen and (max-width:768px){
+  nav,section,.footer{
+    width:100vw;
+  }
+  /* .project{
+   padding-right: 2rem;
+   padding-left:0;
+  } */
+  .home ul{
+    flex-direction: column;
+  
+  }
+  .home ul li{
+    margin-bottom:0.5rem;
+    width:50vw;
+    margin-left:0;
+  }
+  .manna_left,.netflix_left,.jobly_left{
+    width:10vw;
+  }
+  
+  div .manna_img,.netflix_img,.jobly_img{
+    width:70vw;
+    margin-top:1rem;
+    margin-bottom:1rem;
+  }
+  .project_discription{
+    width:80vw;
+  }
+  img{
+    width:10px;
+  }
+  .project_img,#nfIcon,#jbIcon{
+    width:50px;
+    height:50px;
+  }
+  .manna_right,.netflix_right,.jobly_right{
+ margin-left:0.5rem;
+  }
+ 
+}
 
