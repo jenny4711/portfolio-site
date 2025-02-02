@@ -3,6 +3,7 @@
   background-color: black;
   color: white;
 }
+.findHome_left .line
 .manna_left .line,
 .netflix_left .line,
 .jobly_left .line{
@@ -19,7 +20,7 @@
   text-decoration: none;
   color: white;
 }
-.netflix_left .iconBk,.jobly_left .iconBk{
+.netflix_left .iconBk,.jobly_left .iconBk,.findHome_left .iconBk{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +125,7 @@ a{
   flex-direction: column;
   align-items: center;
 }
+.findHome_left,
 .manna_left,
 .netflix_left,
 .jobly_left {
@@ -131,7 +133,7 @@ a{
   flex-direction: column;
   align-items: center;
 }
-
+.project_findHome,
 .project_manna,
 .project_netflix,
 .project_jobly {
@@ -141,6 +143,7 @@ a{
 }
 
 .manna_left span,
+.findHome_left span,
 .netflix_left span,
 .jobly_left span{
   width: 4px;
@@ -162,6 +165,7 @@ a{
 }
 .manna_right,
 .netflix_right,
+.findHome_right,
 .jobly_right {
   display: flex;
   flex-direction: column;
@@ -171,6 +175,7 @@ a{
   margin-left: 2rem;
 }
 .manna_right span,
+.findHome span,
 .netflix_right span,
 .jobly_right span {
   font-size: 16px;
@@ -188,6 +193,7 @@ a{
   margin-right: 1rem;
   font-size: 14px;
 }
+.findHome_img,
 .manna_img,
 .netflix_img,
 .jobly_img {
@@ -196,13 +202,16 @@ a{
   margin-top: 1rem;
   border-radius: 10px;
 }
+.findHome_img{
+  margin-bottom: 50px;
+}
 .project_discription {
   width: 500px;
 }
-.netflix_icon,.jobly_icon {
+.netflix_icon,.jobly_icon ,.findHome_icon{
   width: 40px;
 }
-.netflix_left .iconWh,.jobly_left .iconJwh{
+.netflix_left .iconWh,.jobly_left .iconJwh ,.findHome_left .iconJwh{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,7 +282,7 @@ i {
     width:10vw;
   }
   
-  div .manna_img,.netflix_img,.jobly_img{
+  div .manna_img,.netflix_img,.jobly_img,.findHome_img{
     width:70vw;
     margin-top:1rem;
     margin-bottom:1rem;
@@ -288,7 +297,7 @@ i {
     width:50px;
     height:50px;
   }
-  .manna_right,.netflix_right,.jobly_right{
+  .manna_right,.netflix_right,.jobly_right,.findHome_right{
  margin-left:0.5rem;
   }
  
